@@ -22,7 +22,6 @@ class App < Sinatra::Base
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    string = ""
     @w1 = params[:word1]
     @w2 = params[:word2]
     @w3 = params[:word3]
