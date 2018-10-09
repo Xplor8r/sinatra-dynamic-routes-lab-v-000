@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     @no = params[:number]
-    "#{Math.sqrt(@no.to_i)}"
+    "#{Math.sqrt(@no.to_i).ceil}"
   end
 
   get '/say/:number/:phrase' do
