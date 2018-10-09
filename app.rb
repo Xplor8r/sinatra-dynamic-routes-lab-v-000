@@ -22,7 +22,14 @@ class App < Sinatra::Base
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-
+    string = ""
+    @w1 = params[:word1]
+    @w2 = params[:word2]
+    @w3 = params[:word3]
+    @w4 = params[:word4]
+    @w5 = params[:word5]
+    string = @w1 + " " + @w2 + " " + @w3 + " " + @w4 + " " + @w5
+    string
   end
 
   get '/:operation/:number1/:number2' do
